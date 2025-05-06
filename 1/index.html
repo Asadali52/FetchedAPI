@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+    <style>
+        img {
+            margin-top: 10px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        button {
+            display: block;
+            padding: 8px 15px;
+            border: 0;
+            background: #000;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="getFacts()" style="display: block;">Generate random dog image</button>
+    <img id="dog-image" alt="Random Dog" width="300px" />
+    <p>status: <span id="status"></span></p>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
