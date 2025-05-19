@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            gap: 10px;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Comments API</h1>
+    <div>
+        <p class="red">id:</p>
+        <p id="idEle"></p>
+    </div>
+    <div>
+        <p class="red">Name:</p>
+        <p id="nameEle"></p>
+    </div>
+    <div>
+        <p class="red">Email:</p>
+        <p id="emailEle"></p>
+    </div>
+    <div>
+        <p class="red">Body:</p>
+        <p id="bodyEle"></p>
+    </div>
+    <button onclick="fetchApi()">click</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
