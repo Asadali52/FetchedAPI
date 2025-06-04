@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product API</title>
+    <style>
+        div {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .red {
+            color: red;
+        }
+
+        img {
+            border: 1px solid gray;
+        }
+
+        button {
+            border: 0;
+            background: #0a96d4;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            display: block;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 100px;
+        }
+
+        p {
+            margin: 0;
+            margin-bottom: 5px;
+        }
+        section{
+            border: 1px solid black;
+            display: inline-block;
+            padding: 10px;
+        }
+        body{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <span>
+            <p class="red">Product img</p>
+            <img src="" id="imgSrc" height="100px" alt="">
+        </span>
+        <div>
+            <p class="red">title:</p>
+            <p id="titleEle"></p>
+        </div>
+        <div>
+            <p class="red">descriptiveTitle:</p>
+            <p id="descriptiveTitleEle"></p>
+        </div>
+        <div>
+            <p class="red">Created Date:</p>
+            <p id="createdDate"></p>
+        </div>
+        <div>
+            <span>
+                <p class="red">Category img</p>
+                <img src="" id="categoryImg" height="100px" alt="">
+            </span>
+            <span>
+                <p class="red">SubCategory img</p>
+                <img src="" id="subCategoryImg" height="100px" alt="">
+            </span>
+        </div>
+    </section>
+
+    <button onclick="fetchApi()">New Product</button>
+    <script src="js.js"></script>
+</body>
+
+</html>
