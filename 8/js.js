@@ -14,8 +14,8 @@ function fetchApi() {
             return response.json();
         })
         .then(function (actualData) {
-            console.log(actualData);
             const randomProduct = actualData.data[Math.floor(Math.random() * actualData.data.length)];
+            console.log(randomProduct);
             imageSource.src = randomProduct.images[0];
             publishedDate.innerHTML = randomProduct.createdAt;
             titleElement.innerHTML = randomProduct.title;
