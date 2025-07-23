@@ -22,7 +22,9 @@ let zipcodeEle = document.querySelector("#zipcodeElement");
 
 async function loadUserData() {
     try {
-        const response = await fetch("https://jsonplaceholder.typicode.com/users");
+        let URL = fetch("https://jsonplaceholder.typicode.com/users")
+        console.log("🚀 ~ loadUserData ~ URL:", URL)
+        const response = await URL;
         const data = await response.json();
         console.log(data);
 
